@@ -13,7 +13,7 @@ Metashape.app.cpu_enable=True
 #
 #   Après l'etape 1, ouvrez le projet psx et placer les reperes manuellement.
 #   Puis lancer l'etape 2.
-etape=2 
+etape=1 
 
 project_name="SFM-test-RGB"
 project_path="D:\\Basic_sfm\\"
