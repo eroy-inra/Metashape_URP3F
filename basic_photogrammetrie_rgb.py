@@ -15,12 +15,12 @@ Metashape.app.cpu_enable=True
 #   Puis lancer l'etape 2.
 etape=1 
 
-project_name="SFM-test-RGB"
-project_path="D:\\Basic_sfm\\"
-photos_path="D:\\Basic_sfm\\photos\\"
-project_crs="EPSG::2154"
-gcp_name="SFM-test-RGB_gcp.csv"
-license_metashape_file="License_metashape.txt"
+project_name="SFM-test-RGB"                     #Nom du projet
+project_path="D:\\Basic_sfm\\"                  #chemin du projet
+photos_path="D:\\Basic_sfm\\photos\\"           #chemin des photos
+project_crs="EPSG::2154"                        #Systeme de coordonnes du projet
+gcp_name="SFM-test-RGB_gcp.csv"                 #Nom du fichier de repere georeferences
+license_metashape_file="License_metashape.txt"  #Nom du fichier de licence
 project_name_psx=os.path.join(project_path,'{}.psx'.format(project_name))
 
 #Lecture de la license de Metashape
@@ -30,8 +30,6 @@ print(license_metashape)
 file.close()
 if not Metashape.license.valid:
     Metashape.license.activate(license_metashape) # replace xxxx by your Activation key
-
-
 
 ##############################################################################################
 if etape==1:
